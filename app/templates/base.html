@@ -1,0 +1,19 @@
+<!-- app/templates/base.html -->
+<!doctype html>
+<html>
+ <head>
+ {% if title %}
+ <title>{{ title }} - lager</title>
+ {% else %}
+ <title>Welcome to lager</title>
+ {% endif %}
+ </head>
+ <body>
+ <div>lager: 
+    <a href={{ url_for('index')}}>Home</a>
+    <a href={{ url_for('login')}}>Home</a>
+</div>
+ <hr>
+ {% block content %}{% endblock %}
+ </body>
+</html>
