@@ -1,1 +1,1 @@
-git init
+from app import app
